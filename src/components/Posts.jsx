@@ -34,7 +34,7 @@ const Posts = () => {
       }
       
     } catch (error) {
-      
+      console.log(error);
     }
     }
   
