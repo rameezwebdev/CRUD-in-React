@@ -13,3 +13,8 @@ export const getPost = () => {
 export const deletePost = (id) => {
     return api.delete(`/posts/${id}`)
 }
+
+// Add Method in Axios
+export const addData = (post) => {
+    return api.post('/posts', post)
+}

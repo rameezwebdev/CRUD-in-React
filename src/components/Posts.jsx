@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { deletePost, getPost } from "../API/PostData";
 import DataCard from "./DataCard";
+import Forms from "./Forms";
 
 
 const Posts = () => {
@@ -46,6 +47,9 @@ const Posts = () => {
 
   return (
     <div className="bg-[#111923]">
+      <div className="pt-6 justify-items-center">
+        <Forms data = {data} setData = {setData} />
+      </div>
       <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-10 py-10 sm:py-14">
         {data.map((curr) => {
             const {id} = curr;
